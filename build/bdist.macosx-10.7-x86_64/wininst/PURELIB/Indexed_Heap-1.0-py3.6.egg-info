@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: Indexed_Heap
+Version: 1.0
+Summary: A binary indexed heap
+Home-page: https://github.com/zhtpandog/Indexed_Heap
+Author: Haotian Zhang
+Author-email: zhtpandog@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/zhtpandog/Indexed_Heap/archive/v1.0.tar.gz
+Description: UNKNOWN
+Keywords: heap,binary heap,indexed heap,indexed binary heap,heapify,delmin,peek,sift,priority queue,dijkstra,mst,minimum spanning tree,logn
+Platform: UNKNOWN
