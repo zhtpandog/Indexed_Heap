@@ -164,7 +164,8 @@ class Indexed_Heap(object):
         del self.obj_idx_map[id_del]
 
         # restore heap order
-        self.heapify()
+        # self.heapify()
+        self._siftdown(pos_del)
 
     def del_root(self):
         """
