@@ -8,6 +8,7 @@ Here I develop my own solution using an Indexed Heap idea. I use additional dict
 
 ## Major Scripts ##
 Please check Indexed_Heap/Indexed_Heap.py file. It contains doumented Python code and unit tests.  
+The code is tested under Python 2.7. It does not have any dependencies.  
 
 ## Demo ##
 Prepare the input. Suppose we have a test_obj class that serves as the elements inside the indexed heap. We create test_obj lists as input array:  
