@@ -9,7 +9,8 @@ class Indexed_Heap(object):
     def __init__(self, list_of_obj):
         """
         Initialize an indexed heap with id and value pairs.
-        :param list_of_obj: A list of objects. Each obj must have a field "id" (e.g. vertex id in a graph) and a field "val" (e.g. distance from this vertex to origin vertex).
+        :param list_of_obj: A list of objects. Each obj must have a field "id" (e.g. vertex id in a graph) 
+                            and a field "val" (e.g. distance from this vertex to origin vertex).
         """
 
         # initialize a random array
@@ -21,7 +22,7 @@ class Indexed_Heap(object):
             self.heap.append(obj)
             self.obj_idx_map[obj.id] = self.idx
             self.idx += 1
-
+        
 
     def __cmp_lt(self, x, y):
         return (x < y) if hasattr(x, "__lt__") else (not y <= x)
@@ -213,7 +214,20 @@ class test_obj(object):
         return self.val < other.val
 
 if __name__ == "__main__":
-    pass
+
+    test_arr = []
+    input_dict = {'a': 55, 'b': 65, 'c': 20, 'd': 90, 'e': 42, 'f': 72, 'g': 3}
+    for k,v in input_dict.items():
+        test_arr.append(test_obj(k, v))
+
+    hp = Indexed_Heap(test_arr)
+    hp.heapify()
+    print(hp.peek().val)
+    hp.change_value(test_obj('g', 50))
+    print(hp.peek().val)
+
+
+
 
     # no need to do this again
     # import random
