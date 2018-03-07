@@ -36,5 +36,5 @@ print(hp.peek().val) # output 3
 After we change the element, the smallest element is the one with value 20:  
 ```
 hp.change_value(test_obj('g', 50))
-print(hp.peek().val # output 20
+print(hp.peek().val) # output 20
 ```
